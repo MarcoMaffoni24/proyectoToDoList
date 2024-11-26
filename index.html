@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>TO DO LIST ANAISHE</title>
+            <style>
+                body{
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding: 20px;
+                    background-color: rgb(221, 205, 184);
+                }
+                .container{
+                    max-width: 600px;
+                    margin: auto;
+                    background: rgb(255, 255, 255);
+                    padding: 20px;
+                    border-radius: 5px;
+                }
+                input[type="text"] {
+                    width:100%;
+                    box-sizing: border-box;
+                    padding: 10px;
+                    margin:5px;
+                }
+                button {
+                    padding: 10px;
+                    margin: 5px;
+                }
+                ul { 
+                    list-style-type: none; 
+                    padding: 0; 
+                } 
+                li { 
+                    padding: 10px; 
+                    background: #eee; 
+                    margin: 5px 0; 
+                    border-radius: 5px;
+                }
+                .completed span {
+                    text-decoration: line-through;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do List</h1>
+            <input type="text" id="taskInput" placeholder="Agrega la tarea...">
+            <button onclick="addTask()">Agregar</button>
+            <ul id="taskList"></ul>
+        </div>
+        <script src="logic.js"></script>
+    </body>
+</html>
